@@ -86,7 +86,6 @@ Go to Settings → General → Streams → Stream Badges
 
 In the Badge JSON URL field, paste:
 
-Código
 https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/badges.json
 Click Import
 
@@ -103,8 +102,6 @@ Click the 📥 Import icon in the formatter section
 
 Import the JSON file
 
-Código
-https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/formatter.json
 Confirm the import
 
 The Name Template and Description Template will update automatically
