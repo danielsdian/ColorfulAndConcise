@@ -68,7 +68,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -81,7 +81,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -94,7 +94,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -107,7 +107,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -120,7 +120,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -133,7 +133,7 @@
       "tagColor": "#000000",
       "borderColor": "#1976D2",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -185,7 +185,7 @@
       "tagColor": "#000000",
       "borderColor": "#FB8C00",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -198,7 +198,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -211,7 +211,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -224,7 +224,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -237,7 +237,7 @@
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -363,9 +363,9 @@
       "pattern": "(?i)\\bai\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#FB8C00",
+      "borderColor": "#E53935",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -378,7 +378,7 @@
       "tagColor": "#000000",
       "borderColor": "#43A047",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -391,7 +391,7 @@
       "tagColor": "#000000",
       "borderColor": "#43A047",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -434,7 +434,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#43A047",
+      "borderColor": "#1976D2",
       "groupId": "gv",
       "id": "v-hdr10",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR10.png",
@@ -447,7 +447,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FB8C00",
+      "borderColor": "#43A047",
       "groupId": "gv",
       "id": "v-hdr",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR.png",
@@ -460,7 +460,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#E53935",
+      "borderColor": "#FB8C00",
       "groupId": "gv",
       "id": "v-sdr",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/SDR.png",
@@ -482,7 +482,7 @@
       "tagColor": "#000000",
       "borderColor": "#FB8C00",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -495,7 +495,7 @@
       "tagColor": "#000000",
       "borderColor": "#43A047",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -508,7 +508,7 @@
       "tagColor": "#000000",
       "borderColor": "#43A047",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -521,7 +521,7 @@
       "tagColor": "#000000",
       "borderColor": "#43A047",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -596,7 +596,7 @@
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/digitalplus.png",
       "isEnabled": true,
       "name": "DD+",
-      "pattern": "(?i)^(?=.*\\bddp[a-z0-9.]*\\b|.*\\bdd\\+\\b|.*\\beac-?3\\b|.*\\be-ac-?3\\b)(?!.*\\batmos\\b)(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\bdts\\b)(?!.*\\b(?:dv|dovi|dolby[._ -]?vision)\\b)",
+      "pattern": "(?i)^(?=.*ddp[a-z0-9.]*|.*dd\\+|.*eac-?3|.*e-ac-?3)(?!.*atmos)(?!.*true[\\s._-]?hd)(?!.*dts)(?!.*(?:dv|dovi|dolby[._ -]?vision))",
       "tagColor": "#000000",
       "tagStyle": "bordered",
       "textColor": "#FFFFFF",
@@ -664,7 +664,7 @@
       "tagColor": "#00000000",
       "borderColor": "#00000000",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
@@ -676,7 +676,7 @@
       "name": "NETFLIX",
       "pattern": "(?i)\\b(?:nflx|netflix)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -689,7 +689,7 @@
       "name": "PRIME VIDEO",
       "pattern": "(?i)\\b(?:amzn|amazon|prime[._ -]?video|primevideo|prime|pv)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -702,7 +702,7 @@
       "name": "APPLE TV+",
       "pattern": "(?i)\\b(?:atvp|apple[._ -]?tv\\+?|appletv|itunes|itms)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -715,7 +715,7 @@
       "name": "DISNEY+",
       "pattern": "(?i)\\b(?:dsnp|dsny|disney\\+?|disney[._ -]?plus|disneyplus|d\\+|dplus)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -728,7 +728,7 @@
       "name": "HBO MAX",
       "pattern": "(?i)\\b(?:hmax|hbomax|hbo[._ -]?max)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -741,7 +741,7 @@
       "name": "HULU",
       "pattern": "(?i)\\bhulu\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -754,7 +754,7 @@
       "name": "PARAMOUNT+",
       "pattern": "(?i)\\b(?:pmtp|pamp|paramount\\+?|paramount[._ -]?plus|paramountplus|p\\+)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
@@ -767,7 +767,7 @@
       "name": "CRUNCHYROLL",
       "pattern": "(?i)\\b(?:crunchyroll|crunch)\\b",
       "tagColor": "#00000000",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "textColor": "#FFFFFF",
       "type": "filter"
     },
