@@ -86,7 +86,8 @@ Go to Settings → General → Streams → Stream Badges
 
 In the Badge JSON URL field, paste:
 
-https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/badges.json
+https://github.com/danielsdian/ColorfulAndConcise/raw/refs/heads/main/badge.json
+
 Click Import
 
 Nuvio will load all groups and badges automatically
