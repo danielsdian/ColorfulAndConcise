@@ -596,7 +596,7 @@
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/digitalplus.png",
       "isEnabled": true,
       "name": "DD+",
-      "pattern": "(?i)^(?=.*\\b(?:ddp[a-z0-9.]*|dd\\+|eac-?3|e-ac-?3)\\b)(?!.*\\batmos\\b)(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\bdts\\b)(?!.*\\b(?:dv|dovi|dolby[._ -]?vision)\\b)",
+      "pattern": "(?i)^(?=.*\\bddp[a-z0-9.]*\\b|.*\\bdd\\+\\b|.*\\beac-?3\\b|.*\\be-ac-?3\\b)(?!.*\\batmos\\b)(?!.*\\btrue[\\s._-]?hd\\b)(?!.*\\bdts\\b)(?!.*\\b(?:dv|dovi|dolby[._ -]?vision)\\b)",
       "tagColor": "#000000",
       "tagStyle": "bordered",
       "textColor": "#FFFFFF",
