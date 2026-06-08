@@ -609,7 +609,7 @@
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dts.png",
       "isEnabled": true,
       "name": "DTS",
-      "pattern": "(?i)^(?=.*\\bdts\\b)(?!.*\\bdts[-_. ]?(?:hd|ma|xll|x)\\b)",
+      "pattern": "(?i)^(?=.*\\bdts\\b)(?!.*\\bdts[-_. ]?(?:hd|ma|xll|x))(?!.*dts(?:hd|ma))",
       "tagColor": "#000000",
       "tagStyle": "bordered",
       "textColor": "#FFFFFF",
