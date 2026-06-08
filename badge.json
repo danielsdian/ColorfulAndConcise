@@ -92,7 +92,7 @@
       "pattern": "(?i)\\b360[pi]?\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#EF5350",
+      "borderColor": "#5C6BC0  ",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -105,7 +105,7 @@
       "pattern": "(?i)\\b480[pi]?\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#EF5350",
+      "borderColor": "#9CCC65  ",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -118,7 +118,7 @@
       "pattern": "(?i)\\b576[pi]?\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#FF7043",
+      "borderColor": "#66BB6A  ",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -131,7 +131,7 @@
       "pattern": "(?i)\\b1440[pi]?\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#9CCC65",
+      "borderColor": "#FB8C00  ",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -150,7 +150,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#66BB6A",
+      "borderColor": "#FFA726 ",
       "groupId": "gr",
       "id": "r-1080",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/1080p.png",
@@ -163,7 +163,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#EF5350",
+      "borderColor": "#FF8A65  ",
       "groupId": "gr",
       "id": "r-720",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/720p.png",
@@ -183,7 +183,7 @@
       "pattern": "(?i)\\bhc[-_. ]?hd[-_. ]?rip\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#FF7043",
+      "borderColor": "#9CCC65  ",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -254,7 +254,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#5C6BC0",
+      "borderColor": "#FB8C00  ",
       "groupId": "gq",
       "id": "q-b",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/mono-bluray.png",
@@ -267,7 +267,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#66BB6A",
+      "borderColor": "#FFA726  ",
       "groupId": "gq",
       "id": "q-w",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/mono-webdl.png",
@@ -280,7 +280,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#9CCC65",
+      "borderColor": "#FF8A65 ",
       "groupId": "gq",
       "id": "src-webrip",
       "imageURL": "",
@@ -293,7 +293,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#26A69A",
+      "borderColor": "#5C6BC0  ",
       "groupId": "gq",
       "id": "src-hdtv",
       "imageURL": "",
@@ -306,7 +306,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#FF7043",
+      "borderColor": "#66BB6A  ",
       "groupId": "gq",
       "id": "src-hdrip",
       "imageURL": "",
@@ -363,7 +363,7 @@
       "pattern": "(?i)\\bai\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#EF5350",
+      "borderColor": "#B0BEC5",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -376,7 +376,7 @@
       "pattern": "(?i)\\b10[-_. ]?bit\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#26A69A",
+      "borderColor": "#5C6BC0",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -493,7 +493,7 @@
       "pattern": "(?i)\\bopus\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#26A69A",
+      "borderColor": "#5C6BC0",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -506,7 +506,7 @@
       "pattern": "(?i)\\bdts[-_. ]?es\\b",
       "imageURL": "",
       "tagColor": "#000000",
-      "borderColor": "#9FA8DA",
+      "borderColor": "#5C6BC0",
       "textColor": "#FFFFFF",
       "tagStyle": "filled",
       "type": "filter"
@@ -551,7 +551,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#5C6BC0",
+      "borderColor": "#FFA726",
       "groupId": "ga",
       "id": "a-th",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/truehd.png",
@@ -564,7 +564,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#7986CB",
+      "borderColor": "#FF8A65",
       "groupId": "ga",
       "id": "a-dtsma",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dtshdma.png",
@@ -577,7 +577,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#9FA8DA",
+      "borderColor": "#66BB6A",
       "groupId": "ga",
       "id": "a-dtshd",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dtshd.png",
@@ -603,7 +603,7 @@
       "type": "filter"
     },
     {
-      "borderColor": "#EF9A9A",
+      "borderColor": "#EF5350",
       "groupId": "ga",
       "id": "a-dts",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dts.png",
