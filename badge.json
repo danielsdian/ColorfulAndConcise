@@ -150,7 +150,7 @@
     },
     {
       "id": "gv-atmosvision", "name": "AtmosVision", "groupId": "gv", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(atmos|ddpa\\d?)(?=[\\s\\)\\]_.,\\-\\d]|$))(?=.*(?:^|[\\s\\[(_.,\\-])(dv|dovi|dolby[._ -]?vision)(?=[\\s\\)\\]_.,\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(atmos|ddpa\\d?)(?=[\\s\\)\\]_.,\\d\\-]|$))(?=.*(?:^|[\\s\\[(_.,\\-])(dv|dovi|dolby[._ -]?vision)(?=[\\s\\)\\]_.,\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/atmos-vision.png",
       "tagColor": "#000000", "borderColor": "#F5C400", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
@@ -186,69 +186,69 @@
     },
     {
       "id": "gv-aac", "name": "AAC", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(aac)(?=[\\s\\)\\]_.,\\-\\d]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(aac)(?=[\\s\\)\\]_.,\\d\\-]|$))",
       "imageURL": "", "tagColor": "#000000", "borderColor": "#FB8C00", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "gv-opus", "name": "OPUS", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(opus)(?=[\\s\\)\\]_.,\\-\\d]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(opus)(?=[\\s\\)\\]_.,\\d\\-]|$))",
       "imageURL": "", "tagColor": "#000000", "borderColor": "#43A047", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "gv-dts-es", "name": "DTS-ES", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_. ]?es)(?=[\\s\\)\\]_.,\\-\\d]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_. ]?es)(?=[\\s\\)\\]_.,\\d\\-]|$))",
       "imageURL": "", "tagColor": "#000000", "borderColor": "#43A047", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "gv-flac", "name": "FLAC", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(flac)(?=[\\s\\)\\]_.,\\-\\d]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(flac)(?=[\\s\\)\\]_.,\\d\\-]|$))",
       "imageURL": "", "tagColor": "#000000", "borderColor": "#43A047", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-at", "name": "Atmos", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(atmos|ddpa\\d?)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(dv|dovi|dolby[._ -]?vision))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(atmos|ddpa\\d?)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(dv|dovi|dolby[._ -]?vision))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/atmos.png",
       "tagColor": "#000000", "borderColor": "#F5C400", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-dtsx", "name": "DTS:X", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_.: ]?x)(?=[\\s\\)\\]_.,\\-\\d]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_.: ]?x)(?=[\\s\\)\\]_.,\\d\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dtsx.png",
       "tagColor": "#000000", "borderColor": "#F5C400", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-th", "name": "TrueHD", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(true[\\s._-]?hd)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(atmos|ddpa\\d?))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(true[\\s._-]?hd)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(atmos|ddpa\\d?))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/truehd.png",
       "tagColor": "#000000", "borderColor": "#1976D2", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-dtsma", "name": "DTS-HD MA", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_. ]?(hd[-_. ]?)?ma)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(dts[-_.: ]?x|atmos|ddpa\\d?))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_. ]?(hd[-_. ]?)?ma)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(dts[-_.: ]?x|atmos|ddpa\\d?))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dtshdma.png",
       "tagColor": "#000000", "borderColor": "#1976D2", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-dtshd", "name": "DTS-HD", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_. ]?hd)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(dts[-_. ]?(hd[-_. ]?)?ma|dts[-_.: ]?x|atmos|ddpa\\d?))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts[-_. ]?hd)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(dts[-_. ]?(hd[-_. ]?)?ma|dts[-_.: ]?x|atmos|ddpa\\d?))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dtshd.png",
       "tagColor": "#000000", "borderColor": "#43A047", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-dp", "name": "DD+", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dd\\+|ddp|eac3|e-ac-3)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(atmos|ddpa\\d?|true[\\s._-]?hd))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dd\\+|ddp|eac3|e-ac-3)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(atmos|ddpa\\d?|true[\\s._-]?hd))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/digitalplus.png",
       "tagColor": "#000000", "borderColor": "#FB8C00", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-dts", "name": "DTS", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(dts[-_. ]?(hd|ma|xll|x|es)))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dts)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(dts[-_. ]?(hd|ma|xll|x|es)))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dts.png",
       "tagColor": "#000000", "borderColor": "#E53935", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
     {
       "id": "a-dd", "name": "DD", "groupId": "ga", "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dd[25][. ][01]|ac-?3)(?=[\\s\\)\\]_.,\\-\\d]|$))(?!.*(dd\\+|ddp|eac3|e-ac-3|atmos|ddpa\\d?|true[\\s._-]?hd|dts|dv|dovi|dolby[._ -]?vision))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(dd[25][. ][01]|ac-?3)(?=[\\s\\)\\]_.,\\d\\-]|$))(?!.*(dd\\+|ddp|eac3|e-ac-3|atmos|ddpa\\d?|true[\\s._-]?hd|dts|dv|dovi|dolby[._ -]?vision))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/digital.png",
       "tagColor": "#000000", "borderColor": "#E53935", "textColor": "#FFFFFF", "tagStyle": "bordered", "type": "filter"
     },
