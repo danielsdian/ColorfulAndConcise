@@ -323,7 +323,7 @@
       "name": "DVDRip",
       "groupId": "gq",
       "isEnabled": true,
-      "pattern": "(?i)(?<![^\\s\\[(_\\-.,])(dvd[-_. ]?rip)(?=[\\s\\)\\]_.\\-,]|$)",
+      "pattern": "(?i)(?<![^\\s\\[(_\\-.,])(dvd[-_. ]?(rip|mux|r|full|5|9)?)(?=[\\s\\)\\]_.\\-,]|$)",
       "imageURL": "",
       "tagColor": "#000000",
       "borderColor": "#E53935",
@@ -438,7 +438,7 @@
       "name": "HDR10",
       "groupId": "gv",
       "isEnabled": true,
-      "pattern": "(?i)(?!.*(dv|vision|hdr10\\+))(?<![^\\s\\[(_\\-.,])(hdr10)(?=[\\s\\)\\]_.\\-,]|$)",
+      "pattern": "(?i)(?!.*(dv|vision|hdr10(\\+|plus)))(?<![^\\s\\[(_\\-.,])(hdr10)(?=[\\s\\)\\]_.\\-,]|$)",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR10.png",
       "tagColor": "#000000",
       "borderColor": "#1976D2",
@@ -769,6 +769,19 @@
       "borderColor": "#00000000",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "ge-av1",
+      "name": "AV1",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)(?<![^\\s\\[(_\\-.,])(av1)(?=[\\s\\)\\]_.\\-,]|$)",
+      "imageURL": "",
+      "tagColor": "#000000",
+      "borderColor": "#000000",
+      "textColor": "#FFFFFF",
+      "tagStyle": "filled",
       "type": "filter"
     },
     {
