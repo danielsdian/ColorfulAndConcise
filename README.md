@@ -1,108 +1,70 @@
-🎨 Colorful and Concise Badges + AIOStreams Formatter for Nuvio
-A complete, well‑organized badge pack and a fully customized AIOStreams formatter designed specifically for Nuvio.
-This repository provides:
+# 🌈 Colorful & Concise: Ultimate AIOStreams & Nuvio Config
 
-A clean, consistent badge system with a strict color hierarchy
+Welcome to **Colorful & Concise**, a beautifully crafted and highly optimized configuration suite for [AIOStreams](https://github.com/Viren070/AIOStreams) and [Nuvio](https://github.com/NuvioMedia/NuvioMobile). 
 
-A powerful AIOStreams formatter that enhances stream metadata, readability, and visual clarity
+Tired of cluttered stream lists, messy torrent names, and redundant quality badges? This setup completely overhauls your UI to give you a clean, readable, and visually stunning streaming experience.
 
-Optimized regex patterns and structured groups
+---
 
-Easy import via GitHub Raw URLs
+## ✨ Features
 
-Perfect for users who want clarity, technical precision, and aesthetic consistency inside Nuvio.
+### 🛡️ 1. The Ultimate Nuvio Badges (`badge.json`)
+The Nuvio badge configuration is powered by a custom-built, bulletproof Regex engine designed to be 100% crash-proof and extremely accurate.
 
-🌈 Colorful and Concise Badge Pack
-✔ Consistent Color Hierarchy
-Color	Meaning
-🟨 Gold	Premium / top‑tier
-🟩 Green	Very good / modern
-🔵 Blue	Good / intermediate
-🟧 Orange	Weak / borderline
-🟥 Red	Poor / legacy / undesirable
+*   **Airtight Hierarchy (No Double Badges):** If a superior format is detected, lower-tier formats are instantly suppressed to save screen space. 
+    *   *Example:* If a file is **4K**, the **1080p** badge hides. If a file has **TrueHD**, the **DD+** badge hides. 
+    *   *AtmosVision:* Automatically merges Dolby Vision and Atmos into a single, beautiful "AtmosVision" badge.
+*   **Bulletproof Boundaries:** Captures tags flawlessly whether the ripper used spaces, dots, underscores, or brackets (e.g., `[1080p]`, `.HEVC.`, `_DTS-HD_`).
+*   **Sticky Audio Tags:** Perfectly parses audio codecs that are directly attached to their channel numbers (e.g., `DDP5.1`, `AAC2.0`).
+*   **Aesthetic Polish:** Custom-designed image badges and official brand hex colors for streaming platforms (Netflix Red, Prime Blue, Max Purple, etc.).
+
+### 🍿 2. AIOStreams Formatter (`formatter.json`)
+Transforms raw, ugly torrent names into a neat, easily scannable format.
+
+*   **Emoji Integration:** Uses intuitive emojis to quickly identify video quality, audio codecs, file size, and release groups.
+*   **Clean Layout:** Organizes stream data into logical lines so you can compare bitrates, sizes, and seeders at a glance.
+*   **Concise Naming:** Strips away unnecessary junk data from the release titles.
+
+---
+
+## 📸 Previews
+
+*(Tip: Add your own screenshots here by dragging and dropping them into the GitHub editor!)*
+
+*   **Nuvio Badges:**
+    ![Badges Preview](link-to-your-image.png)
+*   **AIOStreams Formatter:**
+    ![Formatter Preview](link-to-your-image.png)
+
+---
+
+## ⚙️ Installation Instructions
+
+### Installing the Nuvio Badges
+1. Open your Nuvio Dashboard.
+2. Navigate to **Settings** > **Badges**.
+3. Look for the **Import/Export** section.
+4. Paste the raw URL of the `badge.json` file to import it:
+   ```text
+   https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/badge.json
+5. Click Import and save your changes.
+
+### Installing the AIOStreams Formatter
+1. Open your AIOStreams Configuration page.
+2. Navigate to the **Formatter** section.
+3. Choose the option to import a custom formatter configuration.
+4. Paste the raw URL of the `formatter.json` file:
+   ```text
+   https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/formatter.json
+5. Apply the formatter and sync your add-on.
+
+## 🛠️ Under the Hood (For Regex Nerds)
+The `badge.json` file utilizes a "Flattened Boundary Logic" `(?:^|[\s\\[(_.,\-])` combined with Non-Capturing Groups. This completely bypasses the limitations of standard JavaScript/Go regex parsers (which often crash on nested negative lookaheads or unescaped hyphens). It scans infinitely across multi-line AIOStreams text blocks to guarantee 100% tag detection with zero false positives.
+
+## 🤝 Contributing
+Feel free to open an issue or submit a pull request if you find a rare edge-case filename that isn't being caught, or if a new major codec is released that needs a badge!
+
+## Enjoy your clean and colorful media library! 🎬
 
 
-This hierarchy is applied uniformly across all badge categories.
-
-🧩 Badge Categories
-Resolution
-From 144p → 4K, with colors reflecting quality.
-
-Quality
-Release types: Remux, BluRay, WEB-DL, HDRip, CAM, etc.
-
-Visual
-Dolby Vision, HDR10+, HLG, IMAX, SDR, and more.
-Includes a dedicated IMAX group.
-
-Audio
-Atmos, DTS:X, TrueHD, DTS-HD MA, FLAC, AAC, OPUS, etc.
-
-Encoder
-AV1, HEVC, AVC, XviD, DivX.
-
-Channels
-Optional 5.1 / 7.1 badges.
-
-Streaming
-Peacock, Netflix, and others.
-
-⚙️ AIOStreams Formatter
-This repository also includes a custom AIOStreams formatter, designed to:
-
-Display stream metadata cleanly
-
-Use intuitive emoji‑based indicators
-
-Show resolution, quality, visual tags, audio tags, languages, edition info, file info, and source details
-
-Improve readability and consistency across all streams
-
-Replace messy or inconsistent metadata with a structured, elegant layout
-
-The formatter includes sections for:
-
-Main Status
-
-Quality
-
-Visual & Audio Tags
-
-Languages
-
-Edition
-
-File Information
-
-Stream Source & Details
-
-Additional Messages
-
-📄 How to Use in Nuvio
-⭐ Importing the Badge Pack (Stream Badges)
-Open Nuvio
-
-Go to Settings → General → Streams → Stream Badges
-
-In the Badge JSON URL field, paste:
-
-https://github.com/danielsdian/ColorfulAndConcise/raw/refs/heads/main/badge.json
-
-Click Import
-
-Nuvio will load all groups and badges automatically
-
-⚙️ Importing the AIOStreams Formatter
-
-Steps:
-Open AIOStreams
-
-Formatter
-
-Click the 📥 Import icon in the formatter section
-
-Import the JSON file
-
-Confirm the import
-
-The Name Template and Description Template will update automatically
+   
