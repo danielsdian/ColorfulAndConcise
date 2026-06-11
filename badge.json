@@ -340,7 +340,7 @@
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/IMAX-enhanced3.png",
       "tagColor": "#000000",
       "textColor": "#FFFFFF",
-      "borderColor": "#1976D2",
+      "borderColor": "#F5C400",
       "tagStyle": "bordered"
     },
     {
@@ -467,7 +467,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:sdr)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dv|dovi|dolby[.\\- _]?vision|hdr10(?:\\+|plus|p|%2b)?|hdr|10bit|hi10p)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/SDR.png",
       "tagColor": "#000000",
-      "borderColor": "#FB8C00",
+      "borderColor": "#E53935",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -636,7 +636,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:7[ .][01]ch?|8ch)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/7dot1.png",
       "tagColor": "#000000",
-      "borderColor": "#000000",
+      "borderColor": "#1976D2",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -649,7 +649,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:5[ .][01]ch?|6ch)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:7[ .][01]ch?|8ch)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/5dot1.png",
       "tagColor": "#000000",
-      "borderColor": "#000000",
+      "borderColor": "#43A047",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
