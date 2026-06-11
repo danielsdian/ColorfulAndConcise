@@ -29,12 +29,9 @@ Transforms raw, ugly torrent names into a neat, easily scannable format.
 
 ## 📸 Previews
 
-*(Tip: Add your own screenshots here by dragging and dropping them into the GitHub editor!)*
+<img width="1279" height="758" alt="Example2" src="https://github.com/user-attachments/assets/5b4f0b4c-1c58-4f06-9f7a-0c32b7ae0879" />
+<img width="1279" height="763" alt="Example1" src="https://github.com/user-attachments/assets/125b1874-1871-4095-b138-e447f61cdb74" />
 
-*   **Nuvio Badges:**
-    ![Badges Preview](link-to-your-image.png)
-*   **AIOStreams Formatter:**
-    ![Formatter Preview](link-to-your-image.png)
 
 ---
 
