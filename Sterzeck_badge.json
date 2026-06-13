@@ -690,7 +690,7 @@
       "tagColor": "#000000",
       "borderColor": "#FFD500",
       "textColor": "#FFFFFF",
-      "tagStyle": "filled",
+      "tagStyle": "bordered",
       "type": "filter"
     },
     {
