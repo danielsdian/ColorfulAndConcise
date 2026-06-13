@@ -556,9 +556,22 @@
       "groupId": "ga",
       "isEnabled": true,
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dts[\\-_. ]?es)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:atmos|ddpa[0-9]?|dts[\\-_.: ]?x|true[\\s._\\-]?hd|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dts-es.png",
       "tagColor": "#000000",
       "borderColor": "#43A047",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "a-dts",
+      "name": "DTS",
+      "groupId": "ga",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dts)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:atmos|ddpa[0-9]?|true[\\s._\\-]?hd|dts[\\-_.: ]?x|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd|dts[\\-_. ]?es)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dts.png",
+      "tagColor": "#000000",
+      "borderColor": "#FB8C00",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -577,19 +590,6 @@
       "type": "filter"
     },
     {
-      "id": "a-dts",
-      "name": "DTS",
-      "groupId": "ga",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dts)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:atmos|ddpa[0-9]?|true[\\s._\\-]?hd|dts[\\-_.: ]?x|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd|dts[\\-_. ]?es)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/dts.png",
-      "tagColor": "#000000",
-      "borderColor": "#E53935",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
       "id": "a-dd",
       "name": "DD",
       "groupId": "ga",
@@ -603,12 +603,12 @@
       "type": "filter"
     },
     {
-      "id": "gv-aac",
-      "name": "AAC",
+      "id": "gv-opus",
+      "name": "OPUS",
       "groupId": "ga",
-      "isEnabled": false,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:aac)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dd\\+|ddp|eac3|e\\-ac\\-3|atmos|ddpa[0-9]?|true[\\s._\\-]?hd|dts[\\-_.: ]?x|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd|dts[\\-_. ]?es|dts|dd[25][. ][01]|ac\\-?3)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/aac.png",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:opus)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dd\\+|ddp|eac3|e\\-ac\\-3|atmos|ddpa[0-9]?|true[\\s._\\-]?hd|dts[\\-_.: ]?x|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd|dts[\\-_. ]?es|dts|dd[25][. ][01]|ac\\-?3|aac)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/OPUS.png",
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
@@ -616,12 +616,12 @@
       "type": "filter"
     },
     {
-      "id": "gv-opus",
-      "name": "OPUS",
+      "id": "gv-aac",
+      "name": "AAC",
       "groupId": "ga",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:opus)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dd\\+|ddp|eac3|e\\-ac\\-3|atmos|ddpa[0-9]?|true[\\s._\\-]?hd|dts[\\-_.: ]?x|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd|dts[\\-_. ]?es|dts|dd[25][. ][01]|ac\\-?3|aac)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/OPUS.png",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:aac)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dd\\+|ddp|eac3|e\\-ac\\-3|atmos|ddpa[0-9]?|true[\\s._\\-]?hd|dts[\\-_.: ]?x|dts[\\-_. ]?(?:hd[\\-_. ]?)?ma|flac|dts[\\-_. ]?hd|dts[\\-_. ]?es|dts|dd[25][. ][01]|ac\\-?3)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/AAC.png",
       "tagColor": "#000000",
       "borderColor": "#E53935",
       "textColor": "#FFFFFF",
