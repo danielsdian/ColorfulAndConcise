@@ -43,7 +43,7 @@ Transforms raw, ugly torrent names into a neat, easily scannable format.
 3. Look for the **Import/Export** section.
 4. Paste the raw URL of the `badge.json` file to import it:
    ```text
-   https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/badge.json
+   https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/Sterzeck_badge.json
 5. Click Import and save your changes.
 
 ### Installing the AIOStreams Formatter
