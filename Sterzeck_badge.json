@@ -228,19 +228,6 @@
       "type": "filter"
     },
     {
-      "id": "src-hdtv",
-      "name": "HDTV",
-      "groupId": "gq",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdtv)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "",
-      "tagColor": "#000000",
-      "borderColor": "#FB8C00",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
       "id": "src-hdrip",
       "name": "HDRip",
       "groupId": "gq",
@@ -249,19 +236,6 @@
       "imageURL": "",
       "tagColor": "#000000",
       "borderColor": "#FB8C00",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "src-dvdrip",
-      "name": "DVDRip",
-      "groupId": "gq",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dvd[\\-_. ]?(?:rip|mux|r|full|5|9)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "",
-      "tagColor": "#000000",
-      "borderColor": "#E53935",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -280,11 +254,24 @@
       "type": "filter"
     },
     {
-      "id": "gq-cam",
-      "name": "CAM",
+      "id": "src-dvdrip",
+      "name": "DVDRip",
       "groupId": "gq",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:cam(?:rip)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dvd[\\-_. ]?(?:rip|mux|r|full|5|9)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "",
+      "tagColor": "#000000",
+      "borderColor": "#FB8C00",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "src-hdtv",
+      "name": "HDTV",
+      "groupId": "gq",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdtv)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "",
       "tagColor": "#000000",
       "borderColor": "#E53935",
@@ -293,11 +280,11 @@
       "type": "filter"
     },
     {
-      "id": "gq-ts",
-      "name": "TS",
+      "id": "gq-scr",
+      "name": "SCR",
       "groupId": "gq",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:ts)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:scr(?:een(?:er)?)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "",
       "tagColor": "#000000",
       "borderColor": "#E53935",
@@ -319,11 +306,24 @@
       "type": "filter"
     },
     {
-      "id": "gq-scr",
-      "name": "SCR",
+      "id": "gq-ts",
+      "name": "TS",
       "groupId": "gq",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:scr(?:een(?:er)?)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:ts)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "",
+      "tagColor": "#000000",
+      "borderColor": "#E53935",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "gq-cam",
+      "name": "CAM",
+      "groupId": "gq",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:cam(?:rip)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "",
       "tagColor": "#000000",
       "borderColor": "#E53935",
