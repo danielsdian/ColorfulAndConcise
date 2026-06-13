@@ -45,16 +45,16 @@
     {
       "borderColor": "#000000",
       "color": "#000000",
-      "id": "gs",
+      "id": "ge",
       "isExpanded": true,
-      "name": "Streaming"
+      "name": "Encoder"
     },
     {
       "borderColor": "#000000",
       "color": "#000000",
-      "id": "ge",
+      "id": "gs",
       "isExpanded": true,
-      "name": "Encoder"
+      "name": "Streaming"
     }
   ],
   "filters": [
@@ -681,6 +681,71 @@
       "type": "filter"
     },
     {
+      "id": "ge-av1",
+      "name": "AV1",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:av1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/av1.png",
+      "tagColor": "#000000",
+      "borderColor": "#FFD500",
+      "textColor": "#FFFFFF",
+      "tagStyle": "filled",
+      "type": "filter"
+    },
+    {
+      "id": "s-h265",
+      "name": "HEVC",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:x265|h[.\\-_ ]?265|hevc|hvc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/hevc.png",
+      "tagColor": "#000000",
+      "borderColor": "#176BE8",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "s-h264",
+      "name": "AVC",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:x264|h[.\\-_ ]?264|avc|avc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|x265|h[.\\-_ ]?265|hevc|hvc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/avc.png",
+      "tagColor": "#000000",
+      "borderColor": "#2EB853",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "b-mjm5yo",
+      "name": "XVID",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:xvid)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|x265|h[.\\-_ ]?265|hevc|hvc1|x264|h[.\\-_ ]?264|avc|avc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/xvid.png",
+      "tagColor": "#000000",
+      "borderColor": "#FF7300",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "b-apmnp1",
+      "name": "DIVX",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:divx|dvix)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|x265|h[.\\-_ ]?265|hevc|hvc1|x264|h[.\\-_ ]?264|avc|avc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/divx.png",
+      "tagColor": "#000000",
+      "borderColor": "#E64141",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
       "id": "gs-peacock",
       "name": "PEACOCK",
       "groupId": "gs",
@@ -793,71 +858,6 @@
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/crunchyroll.png",
       "tagColor": "#00000000",
       "borderColor": "#F47521",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "ge-av1",
-      "name": "AV1",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:av1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/av1.png",
-      "tagColor": "#000000",
-      "borderColor": "#FFD500",
-      "textColor": "#FFFFFF",
-      "tagStyle": "filled",
-      "type": "filter"
-    },
-    {
-      "id": "s-h265",
-      "name": "HEVC",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:x265|h[.\\-_ ]?265|hevc|hvc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/hevc.png",
-      "tagColor": "#000000",
-      "borderColor": "#176BE8",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "s-h264",
-      "name": "AVC",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:x264|h[.\\-_ ]?264|avc|avc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|x265|h[.\\-_ ]?265|hevc|hvc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/avc.png",
-      "tagColor": "#000000",
-      "borderColor": "#2EB853",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "b-mjm5yo",
-      "name": "XVID",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:xvid)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|x265|h[.\\-_ ]?265|hevc|hvc1|x264|h[.\\-_ ]?264|avc|avc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/xvid.png",
-      "tagColor": "#000000",
-      "borderColor": "#FF7300",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "b-apmnp1",
-      "name": "DIVX",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:divx|dvix)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|x265|h[.\\-_ ]?265|hevc|hvc1|x264|h[.\\-_ ]?264|avc|avc1)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/divx.png",
-      "tagColor": "#000000",
-      "borderColor": "#E64141",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
