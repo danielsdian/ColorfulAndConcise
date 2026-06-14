@@ -29,11 +29,11 @@
       "name": "Quality"
     },
     {
+      "borderColor": "#000000",
+      "color": "#000000",
       "id": "imax",
-      "name": "IMAX",
-      "color": "#FFCC00",
-      "borderColor": "#00000000",
-      "isExpanded": false
+      "isExpanded": true,
+      "name": "IMAX"
     },
     {
       "borderColor": "#000000",
@@ -890,7 +890,7 @@
       "type": "filter"
     },
     {
-      "id": "b-16jowh",
+      "id": "ch-61",
       "name": "6.1",
       "groupId": "gc",
       "isEnabled": true,
@@ -916,7 +916,7 @@
       "type": "filter"
     },
     {
-      "id": "b-rlsqjg",
+      "id": "ch-20",
       "name": "2.0",
       "groupId": "gc",
       "isEnabled": true,
@@ -968,7 +968,7 @@
       "type": "filter"
     },
     {
-      "id": "b-mjm5yo",
+      "id": "s-XviD",
       "name": "XVID",
       "groupId": "ge",
       "isEnabled": true,
@@ -981,7 +981,7 @@
       "type": "filter"
     },
     {
-      "id": "b-apmnp1",
+      "id": "s-DivX",
       "name": "DIVX",
       "groupId": "ge",
       "isEnabled": true,
