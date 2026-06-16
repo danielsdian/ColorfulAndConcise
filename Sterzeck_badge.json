@@ -728,7 +728,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b))(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR10Plus.png",
       "tagColor": "#000000",
-      "borderColor": "#176BE8",
+      "borderColor": "#FFD500",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -741,7 +741,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b))(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR10.png",
       "tagColor": "#000000",
-      "borderColor": "#2EB853",
+      "borderColor": "#176BE8",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -754,7 +754,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR.png",
       "tagColor": "#000000",
-      "borderColor": "#FF7300",
+      "borderColor": "#2EB853",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -1080,19 +1080,6 @@
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/av1.png",
       "tagColor": "#000000",
       "borderColor": "#FFD500",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "ge-vp9",
-      "name": "VP9",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:vp9)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:av1|av01)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
-      "imageURL": "",
-      "tagColor": "#000000",
-      "borderColor": "#176BE8",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
