@@ -411,7 +411,7 @@
       "type": "filter"
     },
     {
-      "id": "r-4k",
+      "id": "gr-4k",
       "name": "4K",
       "groupId": "gr",
       "isEnabled": true,
@@ -437,7 +437,7 @@
       "type": "filter"
     },
     {
-      "id": "r-1080",
+      "id": "gr-1080p",
       "name": "1080p",
       "groupId": "gr",
       "isEnabled": true,
@@ -450,7 +450,7 @@
       "type": "filter"
     },
     {
-      "id": "r-720",
+      "id": "gr-720p",
       "name": "720p",
       "groupId": "gr",
       "isEnabled": true,
@@ -528,7 +528,7 @@
       "type": "filter"
     },
     {
-      "id": "q-r",
+      "id": "gq-r",
       "name": "Remux",
       "groupId": "gq",
       "isEnabled": true,
@@ -541,7 +541,7 @@
       "type": "filter"
     },
     {
-      "id": "q-b",
+      "id": "gq-b",
       "name": "BluRay",
       "groupId": "gq",
       "isEnabled": true,
@@ -554,7 +554,7 @@
       "type": "filter"
     },
     {
-      "id": "q-w",
+      "id": "gq-w",
       "name": "WEB-DL",
       "groupId": "gq",
       "isEnabled": true,
@@ -567,7 +567,7 @@
       "type": "filter"
     },
     {
-      "id": "src-webrip",
+      "id": "gq-webrip",
       "name": "WEBRip",
       "groupId": "gq",
       "isEnabled": true,
@@ -580,7 +580,7 @@
       "type": "filter"
     },
     {
-      "id": "src-hdrip",
+      "id": "gq-hdrip",
       "name": "HDRip",
       "groupId": "gq",
       "isEnabled": true,
@@ -606,7 +606,7 @@
       "type": "filter"
     },
     {
-      "id": "src-dvdrip",
+      "id": "gq-dvdrip",
       "name": "DVDRip",
       "groupId": "gq",
       "isEnabled": true,
@@ -619,7 +619,7 @@
       "type": "filter"
     },
     {
-      "id": "src-hdtv",
+      "id": "gq-hdtv",
       "name": "HDTV",
       "groupId": "gq",
       "isEnabled": true,
@@ -708,7 +708,7 @@
       "tagStyle": "bordered"
     },
     {
-      "id": "a-dv",
+      "id": "v-dv",
       "name": "DV",
       "groupId": "gv",
       "isEnabled": true,
@@ -738,7 +738,7 @@
       "name": "HDR10",
       "groupId": "gv",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dv|dovi|dolby[.\\- _]?vision|hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b))(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b))(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR10.png",
       "tagColor": "#000000",
       "borderColor": "#2EB853",
@@ -751,7 +751,7 @@
       "name": "HDR",
       "groupId": "gv",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dv|dovi|dolby[.\\- _]?vision|hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b)?)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR.png",
       "tagColor": "#000000",
       "borderColor": "#FF7300",
@@ -868,7 +868,7 @@
       "name": "DD",
       "groupId": "ga",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dd[25][. ][01]|ac\\-?3)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dd\\+|ddp|eac3|e\\-ac\\-3|atmos|ddpa[0-9]?|true[\\s._\\-]?hd)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:dd(?:[257][. ][01])?|ac\\-?3)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dd\\+|ddp|eac3|e\\-ac\\-3|atmos|ddpa[0-9]?|true[\\s._\\-]?hd)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/digital3.png",
       "tagColor": "#000000",
       "borderColor": "#E64141",
@@ -929,7 +929,7 @@
       "type": "filter"
     },
     {
-      "id": "gv-dts-es",
+      "id": "a-dts-es",
       "name": "DTS-ES",
       "groupId": "ga",
       "isEnabled": true,
@@ -1098,7 +1098,7 @@
       "type": "filter"
     },
     {
-      "id": "s-h265",
+      "id": "ge-h265",
       "name": "HEVC",
       "groupId": "ge",
       "isEnabled": true,
@@ -1111,7 +1111,7 @@
       "type": "filter"
     },
     {
-      "id": "s-h264",
+      "id": "ge-h264",
       "name": "AVC",
       "groupId": "ge",
       "isEnabled": true,
@@ -1163,7 +1163,7 @@
       "type": "filter"
     },
     {
-      "id": "s-nflx",
+      "id": "gs-nflx",
       "name": "NETFLIX",
       "groupId": "gs",
       "isEnabled": true,
@@ -1176,7 +1176,7 @@
       "type": "filter"
     },
     {
-      "id": "s-amzn",
+      "id": "gs-amzn",
       "name": "PRIME VIDEO",
       "groupId": "gs",
       "isEnabled": true,
@@ -1189,7 +1189,7 @@
       "type": "filter"
     },
     {
-      "id": "s-atvp",
+      "id": "gs-atvp",
       "name": "APPLE TV+",
       "groupId": "gs",
       "isEnabled": true,
@@ -1202,7 +1202,7 @@
       "type": "filter"
     },
     {
-      "id": "s-dsnp",
+      "id": "gs-dsnp",
       "name": "DISNEY+",
       "groupId": "gs",
       "isEnabled": true,
@@ -1215,11 +1215,11 @@
       "type": "filter"
     },
     {
-      "id": "s-hmax",
+      "id": "gs-hmax",
       "name": "HBO MAX",
       "groupId": "gs",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hmax|hbomax|hbo[.\\- _]?max)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hmax|hbomax|hbo[.\\- _]?max|(?<!mad[.\\- _])max)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/hmax.png",
       "tagColor": "#00000000",
       "borderColor": "#A45CFF",
@@ -1228,7 +1228,7 @@
       "type": "filter"
     },
     {
-      "id": "s-hulu",
+      "id": "gs-hulu",
       "name": "HULU",
       "groupId": "gs",
       "isEnabled": true,
@@ -1241,7 +1241,7 @@
       "type": "filter"
     },
     {
-      "id": "s-pamp",
+      "id": "gs-pamp",
       "name": "PARAMOUNT+",
       "groupId": "gs",
       "isEnabled": true,
@@ -1254,7 +1254,7 @@
       "type": "filter"
     },
     {
-      "id": "s-croll",
+      "id": "gs-croll",
       "name": "CRUNCHYROLL",
       "groupId": "gs",
       "isEnabled": true,
