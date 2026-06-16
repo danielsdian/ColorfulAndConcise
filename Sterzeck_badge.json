@@ -725,7 +725,7 @@
       "name": "HDR10+",
       "groupId": "gv",
       "isEnabled": true,
-      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b))(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dv|dovi|dolby[.\\- _]?vision)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
+      "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b))(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/HDR10Plus.png",
       "tagColor": "#000000",
       "borderColor": "#176BE8",
