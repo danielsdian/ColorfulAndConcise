@@ -793,7 +793,7 @@
       "pattern": "(?i)^(?=.*(?:^|[\\s\\[(_.,\\-])(?:sdr)(?:[\\s\\)\\]_.,0-9+\\-]|$))(?!.*(?:^|[\\s\\[(_.,\\-])(?:dv|dovi|dolby[.\\- _]?vision|hdr[.\\- _]?10(?:[.\\- _]?(?:\\+|plus)|p|%2b)?|hdr)(?:[\\s\\)\\]_.,0-9+\\-]|$))",
       "imageURL": "https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/images/SDR.png",
       "tagColor": "#000000",
-      "borderColor": "#E64141",
+      "borderColor": "#FF7300",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
