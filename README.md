@@ -9,11 +9,10 @@ Tired of cluttered stream lists, messy torrent names, and redundant quality badg
 ## ✨ Features
 
 ### 🛡️ 1. The Ultimate Nuvio Badges (`badge.json`)
-The Nuvio badge configuration is powered by a custom-built, bulletproof Regex engine designed to be 100% crash-proof and extremely accurate.
+The Nuvio badge configuration is powered by a custom-built, bulletproof Regex engine designed to be 100% crash-proof and extremely fast.
 
 *   **Airtight Hierarchy (No Double Badges):** If a superior format is detected, lower-tier formats are instantly suppressed to save screen space. 
     *   *Example:* If a file is **4K**, the **1080p** badge hides. If a file has **TrueHD**, the **DD+** badge hides. 
-    *   *AtmosVision:* Automatically merges Dolby Vision and Atmos into a single, beautiful "AtmosVision" badge.
 *   **Bulletproof Boundaries:** Captures tags flawlessly whether the ripper used spaces, dots, underscores, or brackets (e.g., `[1080p]`, `.HEVC.`, `_DTS-HD_`).
 *   **Sticky Audio Tags:** Perfectly parses audio codecs that are directly attached to their channel numbers (e.g., `DDP5.1`, `AAC2.0`).
 *   **Aesthetic Polish:** Custom-designed image badges and official brand hex colors for streaming platforms (Netflix Red, Prime Blue, Max Purple, etc.).
@@ -31,7 +30,6 @@ Transforms raw, ugly torrent names into a neat, easily scannable format.
 
 <img width="1279" height="758" alt="Example2" src="https://github.com/user-attachments/assets/5b4f0b4c-1c58-4f06-9f7a-0c32b7ae0879" />
 <img width="1279" height="763" alt="Example1" src="https://github.com/user-attachments/assets/125b1874-1871-4095-b138-e447f61cdb74" />
-
 
 ---
 
@@ -56,7 +54,7 @@ Transforms raw, ugly torrent names into a neat, easily scannable format.
 5. Apply the formatter and sync your add-on.
 
 ## 🛠️ Under the Hood (For Regex Nerds)
-The `badge.json` file utilizes a "Flattened Boundary Logic" `(?:^|[\s\\[(_.,\-])` combined with Non-Capturing Groups. This completely bypasses the limitations of standard JavaScript/Go regex parsers (which often crash on nested negative lookaheads or unescaped hyphens). It scans infinitely across multi-line AIOStreams text blocks to guarantee 100% tag detection with zero false positives.
+The badge.json file utilizes highly optimized Negative Lookbehind logic (e.g., (?<![a-z0-9]) and (?<![\s\S])). By replacing traditional, heavy start-of-string lookaheads and explicit character class boundaries, this configuration prevents infinite backtracking and massively improves parsing performance. It scans efficiently across multi-line text blocks, ensuring lightning-fast word boundary detection and guaranteeing 100% tag detection with zero false positives.
 
 ## 🤝 Contributing
 Feel free to open an issue or submit a pull request if you find a rare edge-case filename that isn't being caught, or if a new major codec is released that needs a badge!
