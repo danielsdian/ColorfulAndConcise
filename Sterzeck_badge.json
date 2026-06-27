@@ -86,95 +86,186 @@
       "type": "filter"
     },
     {
-      "id": "edition-directors-cut",
-      "name": "DIR CUT",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?:\\u206c|\\b(?:director'?s?|dir)\\s*[-_. ]?\\s*cut\\b|\\bdircut\\b)",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/directors-cut.png?rev=8cfff2d8bc69",
-      "tagColor": "#000000",
       "borderColor": "#BBDEFB",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "edition-extended",
-      "name": "EXTENDED",
       "groupId": "gst",
+      "id": "hybrid-release",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/hybrid.png?rev=a262c2c",
       "isEnabled": true,
-      "pattern": "(?i)(?!.*\\bextended[\\s._-]+(?:clip|mix|trailer|teaser|preview)\\b)(?:\\u206d|\\bextended(?:[\\s._-]*(?:cut|edition|version))?\\b|\\bext(?:ended)?[\\s._-]*(?:cut|edition|version)\\b)",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/extended.png?rev=a1f9c3891f68",
-      "tagColor": "#000000",
-      "borderColor": "#BBDEFB",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "edition-theatrical",
-      "name": "THTR",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?!.*\\btheatrical[\\s._-]+(?:trailer|teaser|preview)\\b)(?:\\u206e|\\btheatrical(?:[\\s._-]*(?:cut|edition|version))?\\b|\\bthtr\\b)",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/theatrical.png?rev=37212037d950",
-      "tagColor": "#000000",
-      "borderColor": "#BBDEFB",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "black-and-white",
-      "name": "BLACK & WHITE",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?!.*\\b(?:True[\\s._-]?Hue(?:[\\s._-]?(?:Full[\\s._-]?)?Color)?|True\\.Hue|COLORIZED|Full[\\s._-]?Color)\\b)(?:\\u206b|\\b(?:Authentic[\\s._-]?(?:BW|Black(?:[\\s._-]?(?:and|&)[\\s._-]?White)?)|Authentic\\.BW|Black[\\s._-]?(?:and|&)[\\s._-]?White)\\b|(?:[\\s._]|^)BW(?:[\\s._]|$)|(?:[\\s._]|^)B\\s*[&＆]\\s*W(?:[\\s._]|$))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/black-and-white.png?rev=82ee582b8872",
-      "tagColor": "#000000",
-      "borderColor": "#BBDEFB",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "gst-hybrid",
       "name": "HYBRID",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![a-z0-9])(?:hybrid)(?=$|[^a-z0-9])",
+      "pattern": "(?i)^(?![\\s\\S]*[-_. ]hybrid(?:\\d+)?\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)(?=$|[?\\s#]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])hybrid(?:\\d+)?(?![\\s._-]*log(?:arithmic)?[\\s._-]*gamma)(?=$|[^A-Za-z0-9]))",
       "tagColor": "#000000",
-      "borderColor": "#FFD500",
-      "textColor": "#FFFFFF",
       "tagStyle": "bordered",
-      "type": "filter",
-      "imageURL": ""
+      "textColor": "#FFFFFF",
+      "type": "filter"
     },
     {
-      "id": "gst-criterion",
-      "name": "CRITERION",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![a-z0-9])(?:cc|criterion)(?=$|[^a-z0-9])",
-      "tagColor": "#000000",
-      "borderColor": "#FFD500",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter",
-      "imageURL": ""
-    },
-    {
-      "id": "gst-remastered",
-      "name": "REMASTERED",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![a-z0-9])(?:remaster(?:ed)?|4k[-_. ]?remaster(?:ed)?)(?=$|[^a-z0-9])",
-      "tagColor": "#000000",
       "borderColor": "#BBDEFB",
-      "textColor": "#FFFFFF",
+      "groupId": "gst",
+      "id": "criterion-collection",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/criterion.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "CRITERION",
+      "pattern": "(?i)^(?![\\s\\S]*[-_. ]criterion\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)(?=$|[?\\s#]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])criterion(?![\\s._-]+channel)(?:[\\s._-]+collection)?(?=$|[^A-Za-z0-9]))",
+      "tagColor": "#000000",
       "tagStyle": "bordered",
-      "type": "filter",
-      "imageURL": ""
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "proper-release",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/proper.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "PROPER",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])(?:real[\\s._-]+(?:real[\\s._-]+)?)?proper(?:[\\s._-]?[23])?(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "repack-release",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/repack.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "REPACK",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])(?:real[\\s._-]+(?:real[\\s._-]+)?)?repack(?:[\\s._-]?[23])?(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "remastered-release",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/remastered.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "REMASTERED",
+      "pattern": "(?i)^(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:ai(?:[\\s._-]+(?:4k|uhd|enhanced|upscaled?)){0,2}[\\s._-]+remaster(?:ed)?|remaster(?:ed)?[\\s._-]+(?:by[\\s._-]+)?ai)(?=$|[^A-Za-z0-9]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4k|uhd)[\\s._-]+)?(?:digitally[\\s._-]+)?remaster(?:ed)?(?=$|[^A-Za-z0-9]))",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "open-matte-edition",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/open-matte.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "OPEN MATTE",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])open[\\s._-]*matte(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "regraded-release",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/regraded.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "REGRADED",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])(?:custom[\\s._-]+)?re[\\s._-]?grad(?:e|ed|ing)(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "edition-directors-cut",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/directors-cut.png?rev=8cfff2d8bc69",
+      "isEnabled": true,
+      "name": "DIR CUT",
+      "pattern": "(?i)(?:\\u206c|\\b(?:director'?s?|dir)\\s*[-_. ]?\\s*cut\\b|\\bdircut\\b)",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "edition-extended",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/extended.png?rev=a1f9c3891f68",
+      "isEnabled": true,
+      "name": "EXTENDED",
+      "pattern": "(?i)(?!.*\\bextended[\\s._-]+(?:clip|mix|trailer|teaser|preview)\\b)(?:\\u206d|\\bextended(?:[\\s._-]*(?:cut|edition|version))?\\b|\\bext(?:ended)?[\\s._-]*(?:cut|edition|version)\\b)",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "uncut-edition",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/uncut.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "UNCUT",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])uncut(?![\\s._-]*gems?)(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "uncensored-edition",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/uncensored.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "UNCENSORED",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])uncensored(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "black-and-white",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/black-and-white.png?rev=82ee582b8872",
+      "isEnabled": true,
+      "name": "BLACK & WHITE",
+      "pattern": "(?i)(?!.*\\b(?:True[\\s._-]?Hue(?:[\\s._-]?(?:Full[\\s._-]?)?Color)?|True\\.Hue|COLORIZED|Full[\\s._-]?Color)\\b)(?:\\u206b|\\b(?:Authentic[\\s._-]?(?:BW|Black(?:[\\s._-]?(?:and|&)[\\s._-]?White)?)|Authentic\\.BW|Black[\\s._-]?(?:and|&)[\\s._-]?White)\\b|(?:[\\s._]|^)BW(?:[\\s._]|$)|(?:[\\s._]|^)B\\s*[&＆]\\s*W(?:[\\s._]|$))",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "true-hue-edition",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/true-hue.png?rev=a262c2c",
+      "isEnabled": true,
+      "name": "TRUE-HUE",
+      "pattern": "(?i)(?:^|[^A-Za-z0-9])true[\\s._-]*hue(?:[\\s._-]*(?:full[\\s._-]*)?colou?r)?(?=$|[^A-Za-z0-9])",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
+    },
+    {
+      "borderColor": "#BBDEFB",
+      "groupId": "gst",
+      "id": "edition-theatrical",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/special-tags/theatrical.png?rev=37212037d950",
+      "isEnabled": true,
+      "name": "THTR",
+      "pattern": "(?i)(?!.*\\btheatrical[\\s._-]+(?:trailer|teaser|preview)\\b)(?:\\u206e|\\btheatrical(?:[\\s._-]*(?:cut|edition|version))?\\b|\\bthtr\\b)",
+      "tagColor": "#000000",
+      "tagStyle": "bordered",
+      "textColor": "#FFFFFF",
+      "type": "filter"
     },
     {
       "id": "gst-unrated",
@@ -184,19 +275,6 @@
       "pattern": "(?i)(?<![a-z0-9])(?:unrated|ur)(?=$|[^a-z0-9])",
       "tagColor": "#000000",
       "borderColor": "#BBDEFB",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter",
-      "imageURL": ""
-    },
-    {
-      "id": "gst-proper",
-      "name": "PROPER",
-      "groupId": "gst",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![a-z0-9])(?:proper|repack|v2|v3)(?=$|[^a-z0-9])",
-      "tagColor": "#000000",
-      "borderColor": "#2EB853",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter",
@@ -424,7 +502,7 @@
       "type": "filter"
     },
     {
-      "id": "gr-4k",
+      "id": "r-4k",
       "name": "4K",
       "groupId": "gr",
       "isEnabled": true,
@@ -437,8 +515,8 @@
       "type": "filter"
     },
     {
-      "id": "gr-1440p",
-      "name": "2K QHD",
+      "id": "r-1440p",
+      "name": "1440p",
       "groupId": "gr",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?:(?=\\s*(?<![a-z0-9-])(?:4k|2160[pi]?|3840x2160|uhd|1440[pi]?|2560x1440|2k|qhd|wqhd|1080[pi]?|1920x1080|fhd|full[-_. ]?hd|720[pi]?|1280x720|hd|576[pi]?|1024x576|480[pi]?|854x480|720x480|360[pi]?|640x360|240[pi]?|426x240|144[pi]?|256x144)(?=$|[^a-z0-9-])\\s*$)|(?=[\\s\\S]*[\\r\\n])|(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?=^[a-f0-9]{40}\\s+\\S)))(?=[^\\r\\n]*(?<![a-z0-9-])(?:1440[pi]?|2560x1440|2k|qhd|wqhd)(?=$|[^a-z0-9-])(?![^\\r\\n]*(?<![a-z0-9-])(?:4k|2160[pi]?|3840x2160|uhd|1440[pi]?|2560x1440|2k|qhd|wqhd|1080[pi]?|1920x1080|fhd|full[-_. ]?hd|720[pi]?|1280x720|hd|576[pi]?|1024x576|480[pi]?|854x480|720x480|360[pi]?|640x360|240[pi]?|426x240|144[pi]?|256x144)(?=$|[^a-z0-9-])))",
@@ -450,7 +528,7 @@
       "type": "filter"
     },
     {
-      "id": "gr-1080p",
+      "id": "r-1080",
       "name": "1080p",
       "groupId": "gr",
       "isEnabled": true,
@@ -463,7 +541,7 @@
       "type": "filter"
     },
     {
-      "id": "gr-720p",
+      "id": "r-720",
       "name": "720p",
       "groupId": "gr",
       "isEnabled": true,
@@ -476,8 +554,8 @@
       "type": "filter"
     },
     {
-      "id": "gr-576p",
-      "name": "SD (PAL)",
+      "id": "r-576p",
+      "name": "576p",
       "groupId": "gr",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?:(?=\\s*(?<![a-z0-9-])(?:4k|2160[pi]?|3840x2160|uhd|1440[pi]?|2560x1440|2k|qhd|wqhd|1080[pi]?|1920x1080|fhd|full[-_. ]?hd|720[pi]?|1280x720|hd|576[pi]?|1024x576|480[pi]?|854x480|720x480|360[pi]?|640x360|240[pi]?|426x240|144[pi]?|256x144)(?=$|[^a-z0-9-])\\s*$)|(?=[\\s\\S]*[\\r\\n])|(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?=^[a-f0-9]{40}\\s+\\S)))(?=[^\\r\\n]*(?<![a-z0-9-])(?:576[pi]?|1024x576)(?=$|[^a-z0-9-])(?![^\\r\\n]*(?<![a-z0-9-])(?:4k|2160[pi]?|3840x2160|uhd|1440[pi]?|2560x1440|2k|qhd|wqhd|1080[pi]?|1920x1080|fhd|full[-_. ]?hd|720[pi]?|1280x720|hd|576[pi]?|1024x576|480[pi]?|854x480|720x480|360[pi]?|640x360|240[pi]?|426x240|144[pi]?|256x144)(?=$|[^a-z0-9-])))",
@@ -489,8 +567,8 @@
       "type": "filter"
     },
     {
-      "id": "gr-480p",
-      "name": "SD (NTSC)",
+      "id": "r-480p",
+      "name": "480p",
       "groupId": "gr",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?:(?=\\s*(?<![a-z0-9-])(?:4k|2160[pi]?|3840x2160|uhd|1440[pi]?|2560x1440|2k|qhd|wqhd|1080[pi]?|1920x1080|fhd|full[-_. ]?hd|720[pi]?|1280x720|hd|576[pi]?|1024x576|480[pi]?|854x480|720x480|360[pi]?|640x360|240[pi]?|426x240|144[pi]?|256x144)(?=$|[^a-z0-9-])\\s*$)|(?=[\\s\\S]*[\\r\\n])|(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?=^[a-f0-9]{40}\\s+\\S)))(?=[^\\r\\n]*(?<![a-z0-9-])(?:480[pi]?|854x480|720x480)(?=$|[^a-z0-9-])(?![^\\r\\n]*(?<![a-z0-9-])(?:4k|2160[pi]?|3840x2160|uhd|1440[pi]?|2560x1440|2k|qhd|wqhd|1080[pi]?|1920x1080|fhd|full[-_. ]?hd|720[pi]?|1280x720|hd|576[pi]?|1024x576|480[pi]?|854x480|720x480|360[pi]?|640x360|240[pi]?|426x240|144[pi]?|256x144)(?=$|[^a-z0-9-])))",
@@ -502,7 +580,7 @@
       "type": "filter"
     },
     {
-      "id": "gr-360p",
+      "id": "r-360p",
       "name": "360p",
       "groupId": "gr",
       "isEnabled": true,
@@ -515,7 +593,7 @@
       "type": "filter"
     },
     {
-      "id": "gr-240p",
+      "id": "r-240p",
       "name": "240p",
       "groupId": "gr",
       "isEnabled": true,
@@ -528,7 +606,7 @@
       "type": "filter"
     },
     {
-      "id": "gr-144p",
+      "id": "r-144p",
       "name": "144p",
       "groupId": "gr",
       "isEnabled": true,
@@ -541,7 +619,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-r",
+      "id": "q-r",
       "name": "Remux",
       "groupId": "gq",
       "isEnabled": true,
@@ -554,7 +632,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-b",
+      "id": "q-b",
       "name": "BluRay",
       "groupId": "gq",
       "isEnabled": true,
@@ -567,7 +645,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-w",
+      "id": "q-w",
       "name": "WEB-DL",
       "groupId": "gq",
       "isEnabled": true,
@@ -580,7 +658,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-webrip",
+      "id": "src-webrip",
       "name": "WEBRip",
       "groupId": "gq",
       "isEnabled": true,
@@ -593,7 +671,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-hdrip",
+      "id": "src-hdrip",
       "name": "HDRip",
       "groupId": "gq",
       "isEnabled": true,
@@ -619,7 +697,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-dvdrip",
+      "id": "src-dvdrip",
       "name": "DVDRip",
       "groupId": "gq",
       "isEnabled": true,
@@ -632,7 +710,7 @@
       "type": "filter"
     },
     {
-      "id": "gq-hdtv",
+      "id": "src-hdtv",
       "name": "HDTV",
       "groupId": "gq",
       "isEnabled": true,
@@ -760,7 +838,7 @@
       "type": "filter"
     },
     {
-      "id": "v-dv",
+      "id": "a-dv",
       "name": "DV",
       "groupId": "gv",
       "isEnabled": true,
@@ -812,7 +890,7 @@
       "type": "filter"
     },
     {
-      "id": "gv-hlg",
+      "id": "v-hlg",
       "name": "HLG",
       "groupId": "gv",
       "isEnabled": true,
@@ -864,8 +942,8 @@
       "type": "filter"
     },
     {
-      "id": "a-at",
-      "name": "ATMOS / TRUEHD",
+      "id": "a-atmos-truehd",
+      "name": "ATMOS TRUEHD",
       "groupId": "ga",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:true[-_. ]?hd)(?=$|[^A-Za-z]))",
@@ -890,8 +968,8 @@
       "type": "filter"
     },
     {
-      "id": "a-at-ddp",
-      "name": "ATMOS / DD+",
+      "id": "a-atmos-ddplus",
+      "name": "ATMOS DIGITAL+",
       "groupId": "ga",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:true[-_. ]?hd)(?=$|[^A-Za-z]))(?:(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:ddpa\\d?)(?=$|[^A-Za-z]))|(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus)(?=$|[^A-Za-z])))",
@@ -904,7 +982,7 @@
     },
     {
       "id": "a-dtsx-hd",
-      "name": "DTS:X + HRA",
+      "name": "DTS:X HD",
       "groupId": "ga",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45])))(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio)))(?=$|[^A-Za-z]))",
@@ -916,7 +994,7 @@
       "type": "filter"
     },
     {
-      "id": "a-atmos",
+      "id": "a-at",
       "name": "Atmos",
       "groupId": "ga",
       "isEnabled": true,
@@ -936,14 +1014,14 @@
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio)))(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45])))(?=$|[^A-Za-z]))",
       "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/dts-x.png?rev=034352dd5569",
       "tagColor": "#000000",
-      "borderColor": "#FFD500",
+      "borderColor": "#176BE8",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
     },
     {
       "id": "a-th",
-      "name": "TRUEHD",
+      "name": "TrueHD",
       "groupId": "ga",
       "isEnabled": true,
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:true[-_. ]?hd)(?=$|[^A-Za-z]))",
@@ -961,6 +1039,19 @@
       "isEnabled": true,
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45])))(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma)(?=$|[^A-Za-z]))",
       "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/dts-hd-ma.png?rev=1062843754a3",
+      "tagColor": "#000000",
+      "borderColor": "#176BE8",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "a-flac",
+      "name": "FLAC",
+      "groupId": "ga",
+      "isEnabled": true,
+      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?!(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma)(?=$|[^A-Za-z])))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/flac.png?rev=9905e2e7ff17",
       "tagColor": "#000000",
       "borderColor": "#176BE8",
       "textColor": "#FFFFFF",
@@ -994,7 +1085,7 @@
       "type": "filter"
     },
     {
-      "id": "a-dts-es",
+      "id": "gv-dts-es",
       "name": "DTS-ES",
       "groupId": "ga",
       "isEnabled": true,
@@ -1014,7 +1105,46 @@
       "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?!(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus)(?=$|[^A-Za-z])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z]))",
       "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/dts.png?rev=861ded6d03a8",
       "tagColor": "#000000",
-      "borderColor": "#E64141",
+      "borderColor": "#FF7300",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "a-opus",
+      "name": "OPUS",
+      "groupId": "ga",
+      "isEnabled": true,
+      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus|dd[25][-_. ]?[01]|dd[-_. ]?(?:5|2)(?:[-_. ]?[01])?|dd(?!p|\\+|pa|[-_. ]*plus)|dolby[-_. ]?digital(?![-_. ]?plus)|ac[-_. ]?3)(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses|dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:opus)(?=$|[^A-Za-z]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/opus.png?rev=a430a40aeece",
+      "tagColor": "#000000",
+      "borderColor": "#FF7300",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "a-dd",
+      "name": "DD",
+      "groupId": "ga",
+      "isEnabled": true,
+      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?!(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses|dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dd[25][-_. ]?[01]|dd[-_. ]?(?:5|2)(?:[-_. ]?[01])?|dd(?!p|\\+|pa|[-_. ]*plus)|dolby[-_. ]?digital(?![-_. ]?plus)|ac[-_. ]?3)(?=$|[^A-Za-z]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/dolby-digital.png?rev=cccc2d6ee532",
+      "tagColor": "#000000",
+      "borderColor": "#FF7300",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "a-aac",
+      "name": "AAC",
+      "groupId": "ga",
+      "isEnabled": true,
+      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus|dd[25][-_. ]?[01]|dd[-_. ]?(?:5|2)(?:[-_. ]?[01])?|dd(?!p|\\+|pa|[-_. ]*plus)|dolby[-_. ]?digital(?![-_. ]?plus)|ac[-_. ]?3)(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses|dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac|opus)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:aac)(?=$|[^A-Za-z]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/aac.png?rev=194f7ad171f8",
+      "tagColor": "#000000",
+      "borderColor": "#FF7300",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -1028,58 +1158,6 @@
       "imageURL": "",
       "tagColor": "#000000",
       "borderColor": "#176BE8",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "a-flac",
-      "name": "FLAC",
-      "groupId": "ga",
-      "isEnabled": true,
-      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?!(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma)(?=$|[^A-Za-z])))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/flac.png?rev=9905e2e7ff17",
-      "tagColor": "#000000",
-      "borderColor": "#176BE8",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "a-opus",
-      "name": "OPUS",
-      "groupId": "ga",
-      "isEnabled": true,
-      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus|dd[25][-_. ]?[01]|dd[-_. ]?(?:5|2)(?:[-_. ]?[01])?|dd(?!p|\\+|pa|[-_. ]*plus)|dolby[-_. ]?digital(?![-_. ]?plus)|ac[-_. ]?3)(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses|dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:opus)(?=$|[^A-Za-z]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/opus.png?rev=a430a40aeece",
-      "tagColor": "#000000",
-      "borderColor": "#2EB853",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "a-dd",
-      "name": "DD",
-      "groupId": "ga",
-      "isEnabled": true,
-      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?!(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses|dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:dd[25][-_. ]?[01]|dd[-_. ]?(?:5|2)(?:[-_. ]?[01])?|dd(?!p|\\+|pa|[-_. ]*plus)|dolby[-_. ]?digital(?![-_. ]?plus)|ac[-_. ]?3)(?=$|[^A-Za-z]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/dolby-digital.png?rev=cccc2d6ee532",
-      "tagColor": "#000000",
-      "borderColor": "#E64141",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "a-aac",
-      "name": "AAC",
-      "groupId": "ga",
-      "isEnabled": true,
-      "pattern": "(?i)^(?:(?=[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)\\s+\\S)|(?!(?:[\\s\\S]*\\.(?:mkv|mp4|avi|m2ts|ts|wmv|mov|m4v|mpg|mpeg|webm|iso)))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])[\\s\\S]*(?:^|[^A-Za-z0-9])(?:(?:4320|2160|1440|1080|720|576|480)[pi]?|[48]k|uhd|fhd)(?=$|[^A-Za-z0-9])))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:atmos|ddpa\\d?|true[-_. ]?hd|ddp(?:lus)?\\d*|dd\\+|eac[-_. ]?3|e[-_. ]?ac[-_. ]?3|dolby[-_. ]?digital[-_. ]?plus|dd[25][-_. ]?[01]|dd[-_. ]?(?:5|2)(?:[-_. ]?[01])?|dd(?!p|\\+|pa|[-_. ]*plus)|dolby[-_. ]?digital(?![-_. ]?plus)|ac[-_. ]?3)(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:dts(?:[-_: ]x|[.]x(?!26[45])|x(?!26[45]))|dts[-_. ]?(?:hd[-_. ]?)?(?:ma|master[-_. ]?audio)|dtshdma|(?:dts[-_. ]?hd|dtshd)(?![-_. ]?(?:ma|master[-_. ]?audio))|dts[-_. ]?es|dtses|dts(?!(?:[-_.: ]?(?:hd|es|ma|master|xll)|[-_: ]?x(?!26[45])|[.]x(?!26[45]))))(?=$|[^A-Za-z]))(?![\\s\\S]*(?:^|[^A-Za-z0-9])(?:flac|opus)(?=$|[^A-Za-z]))(?=[\\s\\S]*(?:^|[^A-Za-z0-9])(?:aac)(?=$|[^A-Za-z]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/audio/aac.png?rev=194f7ad171f8",
-      "tagColor": "#000000",
-      "borderColor": "#E64141",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -1157,20 +1235,59 @@
       "pattern": "(?i)(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])",
       "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/av1.png?rev=2cca635c8d96",
       "tagColor": "#000000",
-      "borderColor": "#FF7300",
+      "borderColor": "#FFD500",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
     },
     {
-      "id": "ge-h265",
+      "id": "s-h265",
       "name": "HEVC",
       "groupId": "ge",
       "isEnabled": true,
       "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9]))",
       "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/hevc.png?rev=4433ade5c89a",
       "tagColor": "#000000",
-      "borderColor": "#FFD500",
+      "borderColor": "#176BE8",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "s-h264",
+      "name": "AVC",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:avc|avc1|x[-_. ]?264|h[-_. ]?264|x264|h264)(?=$|[^a-z0-9]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/avc.png?rev=b53e3520e8ac",
+      "tagColor": "#000000",
+      "borderColor": "#2EB853",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "ge-xvid",
+      "name": "XviD",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:avc|avc1|x[-_. ]?264|h[-_. ]?264|x264|h264)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:xvid)(?=$|[^a-z0-9]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/xvid.png?rev=940b12613f14",
+      "tagColor": "#000000",
+      "borderColor": "#FF7300",
+      "textColor": "#FFFFFF",
+      "tagStyle": "bordered",
+      "type": "filter"
+    },
+    {
+      "id": "ge-divx",
+      "name": "DivX",
+      "groupId": "ge",
+      "isEnabled": true,
+      "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:avc|avc1|x[-_. ]?264|h[-_. ]?264|x264|h264)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:xvid)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:divx)(?=$|[^a-z0-9]))",
+      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/divx.png?rev=b238b1cbe026",
+      "tagColor": "#000000",
+      "borderColor": "#E64141",
       "textColor": "#FFFFFF",
       "tagStyle": "bordered",
       "type": "filter"
@@ -1189,45 +1306,6 @@
       "type": "filter"
     },
     {
-      "id": "ge-h264",
-      "name": "AVC",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:avc|avc1|x[-_. ]?264|h[-_. ]?264|x264|h264)(?=$|[^a-z0-9]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/avc.png?rev=b53e3520e8ac",
-      "tagColor": "#000000",
-      "borderColor": "#2EB853",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "ge-xvid",
-      "name": "XVID",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:avc|avc1|x[-_. ]?264|h[-_. ]?264|x264|h264)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:xvid)(?=$|[^a-z0-9]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/xvid.png?rev=940b12613f14",
-      "tagColor": "#000000",
-      "borderColor": "#FF7300",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
-      "id": "ge-divx",
-      "name": "DIVX",
-      "groupId": "ge",
-      "isEnabled": true,
-      "pattern": "(?i)(?<![\\s\\S])(?![\\s\\S]*(?:(?<![a-z0-9])(?:av1|av01)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:hevc|hvc1|hev1|x[-_. ]?265|h[-_. ]?265|x265|h265)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:avc|avc1|x[-_. ]?264|h[-_. ]?264|x264|h264)(?=$|[^a-z0-9])|(?<![a-z0-9])(?:xvid)(?=$|[^a-z0-9])))[\\s\\S]*(?:(?<![a-z0-9])(?:divx)(?=$|[^a-z0-9]))",
-      "imageURL": "https://raw.githubusercontent.com/kingsizew/badges/main/badge-images/encoder/divx.png?rev=b238b1cbe026",
-      "tagColor": "#000000",
-      "borderColor": "#E64141",
-      "textColor": "#FFFFFF",
-      "tagStyle": "bordered",
-      "type": "filter"
-    },
-    {
       "id": "gs-peacock",
       "name": "PEACOCK",
       "groupId": "gs",
@@ -1241,7 +1319,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-nflx",
+      "id": "s-nflx",
       "name": "NETFLIX",
       "groupId": "gs",
       "isEnabled": true,
@@ -1254,7 +1332,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-amzn",
+      "id": "s-amzn",
       "name": "PRIME VIDEO",
       "groupId": "gs",
       "isEnabled": true,
@@ -1267,7 +1345,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-atvp",
+      "id": "s-atvp",
       "name": "APPLE TV+",
       "groupId": "gs",
       "isEnabled": true,
@@ -1280,7 +1358,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-dsnp",
+      "id": "s-dsnp",
       "name": "DISNEY+",
       "groupId": "gs",
       "isEnabled": true,
@@ -1293,8 +1371,8 @@
       "type": "filter"
     },
     {
-      "id": "gs-hmax",
-      "name": "MAX",
+      "id": "s-hmax",
+      "name": "HBO MAX",
       "groupId": "gs",
       "isEnabled": true,
       "pattern": "(?i)(?<![\\s\\S])(?=.*(?<![^\\s\\[(_.,\\-])(?:hmax|hbomax|hbo[.\\- _]?max)(?![^\\s\\)\\]_.,\\-0-9]))",
@@ -1306,7 +1384,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-hulu",
+      "id": "s-hulu",
       "name": "HULU",
       "groupId": "gs",
       "isEnabled": true,
@@ -1319,7 +1397,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-pamp",
+      "id": "s-pamp",
       "name": "PARAMOUNT+",
       "groupId": "gs",
       "isEnabled": true,
@@ -1332,7 +1410,7 @@
       "type": "filter"
     },
     {
-      "id": "gs-croll",
+      "id": "s-croll",
       "name": "CRUNCHYROLL",
       "groupId": "gs",
       "isEnabled": true,
