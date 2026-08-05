@@ -48,9 +48,9 @@ Transforms raw, ugly torrent names into a neat, easily scannable format.
 1. Open your AIOStreams Configuration page.
 2. Navigate to the **Formatter** section.
 3. Choose the option to import a custom formatter configuration.
-4. Paste the raw URL of the `formatter.json` file:
+4. Paste the raw URL of the `Sterzeck_formatter.json` file:
    ```text
-   https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/formatter.json
+   https://raw.githubusercontent.com/danielsdian/ColorfulAndConcise/main/Sterzeck_formatter.json
 5. Apply the formatter and sync your add-on.
 
 ## 🛠️ Under the Hood (For Regex Nerds)
