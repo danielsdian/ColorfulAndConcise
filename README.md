@@ -34,10 +34,6 @@ Transforms raw, ugly torrent names into a neat, easily scannable format optimize
 
 ---
 
-## 📸 Previews
-
----
-
 ## ⚙️ Installation Instructions
 
 ### Installing the Nuvio Badges
