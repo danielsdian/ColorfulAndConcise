@@ -1,12 +1,12 @@
 local mp = require 'mp'
 
 local fallback_active = false
-local drop_threshold = 3       -- Quantidade de quadros perdidos para acionar o fallback
-local startup_grace_sec = 2.0  -- Ignora drops iniciais nos primeiros 2s de buffering/seek
+local drop_threshold = 3       -- Number of dropped frames required to trigger fallback
+local startup_grace_sec = 2.0  -- Ignore initial frame drops during the first 2s of buffering/seeking
 local last_reset_time = mp.get_time()
 local baseline_drops = 0
 local fallback_enabled = true
-local current_mode = nil       -- "high_fps", "c4f32", ou "c4f16"
+local current_mode = nil       -- "high_fps", "c4f32", or "c4f16"
 
 local shaders_c4f32 = {
     "~~/shaders/01_CfL_Prediction.glsl",
@@ -53,10 +53,10 @@ local function reset_to_c4f32()
     apply_shader_mode(is_high_fps() and "high_fps" or "c4f32")
 end
 
--- Restaura o pipeline adequado ao carregar um novo arquivo
+-- Restore the appropriate pipeline when loading a new file
 mp.register_event("file-loaded", reset_to_c4f32)
 
--- Reage imediatamente caso o FPS estimado estabilize >= 48fps apos os primeiros frames
+-- React immediately if the estimated FPS stabilizes at >= 48fps after the initial frames
 mp.observe_property("estimated-vf-fps", "number", function(_, fps)
     if type(fps) ~= "number" then return end
     if is_high_fps() then
@@ -73,29 +73,29 @@ mp.observe_property("estimated-vf-fps", "number", function(_, fps)
     end
 end)
 
--- Atualiza a linha de base apos seeks para nao disparar falso positivo
+-- Update the baseline after seeks to avoid triggering false positives
 mp.register_event("seek", function()
     last_reset_time = mp.get_time()
     baseline_drops = mp.get_property_number("frame-drop-count", 0)
 end)
 
--- Permite reativar manualmente o perfil neural apos uma queda ou troca manual.
+-- Allow manually re-enabling the neural profile after a fallback or manual switch
 mp.register_script_message("shader-fallback-reset", function()
     reset_to_c4f32()
-    mp.osd_message("Auto-Fallback: qualidade restaurada", 2)
+    mp.osd_message("Auto-Fallback: quality restored", 2)
 end)
 
 mp.register_script_message("shader-fallback-toggle", function()
     fallback_enabled = not fallback_enabled
     if fallback_enabled then
-        mp.osd_message("Auto-Fallback: habilitado", 2)
+        mp.osd_message("Auto-Fallback: enabled", 2)
     else
         fallback_active = false
-        mp.osd_message("Auto-Fallback: desabilitado", 2)
+        mp.osd_message("Auto-Fallback: disabled", 2)
     end
 end)
 
--- Monitora perda de quadros na saida a cada 0.5s
+-- Monitor output frame drops every 0.5s
 mp.add_periodic_timer(0.5, function()
     if not fallback_enabled or fallback_active then return end
     if is_high_fps() then
